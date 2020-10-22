@@ -1,0 +1,26 @@
+<html>
+<head><title>Index</title></head>
+
+<body>
+
+<form method="post">
+    {% csrf_token %}
+    <div class="button">
+        <button type="submit" name="adicionar_btn">Adicionar</button>
+    </div>
+    <div class="button">
+        <button type="submit" name="atualizar_btn">Atualizar</button>
+    </div>
+    <div>
+        <label for="mes">Mes:</label>
+        <input type="text" name="mes" />
+        <label for="ano">Ano:</label>
+        <input type="text" name="ano" />
+        <button type="submit" name="consultar_btn">Consultar</button>
+    </div>
+</form>
+<br /><br />
+{{ resultado }}
+
+</body>
+</html>
